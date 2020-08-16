@@ -41,7 +41,7 @@ function PizzaBlock({ name, imageUrl, price, types, sizes }) {
               key={availableSize}
               onClick={() => onSelectSize(index)}
               className={classNames({
-                active: activeSize === availableSize,
+                active: activeSize === index,
                 disabled: !sizes.includes(availableSize),
               })}>
               {availableSize} см.
